@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: hsl(0, 100%, 74%) url(bg-intro-desktop.png);
+    font-family: "Poppins" , sans-serif;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 7rem 6rem 3rem;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem; 
+    width: 50%; 
+}
+
+main article h1{
+    font-size: 3rem;
+    margin-bottom: 1.8rem ;
+}
+
+main div.form{
+    width: 34rem; 
+}
+
+main div.form div.try-it p{
+    background-color:  hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.875rem;
+    margin-bottom: 1.5rem;
+    box-shadow:  0rem 0.625rem hsla(249, 10%, 26%, 0.151);
+}
+
+main div.form div.try-it p span{
+    font-weight: 600;
+}
+
+main div.form form{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.875rem;
+    box-shadow:  0rem 0.625rem hsla(249, 10%, 26%, 0.151);
+}
+
+main div.form form div.inner-form{
+    padding: 2rem;
+    
+}
+
+[class*="error-message"]{
+    display: none;
+    color: hsl(0, 100%, 74%) !important;
+    font-style: italic;
+    text-align: right !important;
+    font-weight: 500;
+    padding-top: 0.325rem;
+}
+
+main div.form form div.inner-form div.input{
+    border: 0.0625rem solid hsl(246, 25%, 77%);
+    border-radius: 0.625rem;
+    display: flex;
+    margin-top: 1.3rem;
+    overflow: hidden;
+}
+
+main div.form form div.inner-form input{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    font-family: "Poppins" , sans-serif;
+}
+
+main div.form div.inner-form img{
+    display: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+main div.form form a{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 0.875rem;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    padding: 0.625rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 1.3rem 0;
+}
+
+main div.form form div.inner-form p{
+    font-size: 0.875rem;
+    color:  hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+main div.form form div.inner-form p span{
+    color:  hsl(0, 100%, 74%) ;
+}
+
+footer div.attribution-container{
+    margin-top: 4rem ;
+    padding: 0 7rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.attribution-container a{
+    color: hsl(248, 32%, 49%);
+}
+
+@media screen and (max-width:1220px){
+    main article h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:1067px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        padding: 7rem 3rem 3rem;
+    }
+
+    main article{
+        width: 90%;
+        text-align: center;
+        padding: 3rem 3rem;
+    }
+
+    footer div.attribution-container{
+        padding: 0rem 0rem 2rem;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width:786px){
+    main article{
+        padding:  2rem 0rem;
+    }
+
+}
+
+@media screen and (max-width:720px){
+    main{
+        padding: 7rem 3rem 3rem;
+    }
+
+    main article, main div.form{
+        width: 90%;
+    }
+
+    footer div.attribution-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 0rem 2rem;
+        justify-content: space-around;
+        font-size: 0.875rem;
+    }
+
+    footer div.attribution-container div{    
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width:493px){
+    main{
+        padding: 6rem 2rem 3rem;
+    }
+
+    main article h1{
+        font-size: 1.85rem;
+    }
+
+
+    main div.form{
+        font-size: 0.875rem;
+    }
+
+    main div.form form div.inner-form input{
+        font-size: 0.8rem;
+    }
+
+    
+    main div.form form div p{
+        font-size: 0.725rem
+    }
+}
+
+@media screen and (max-width:412px){
+    main{
+        padding: 5rem 1rem 3rem;
+    }
+    main div.form form div.inner-form{
+        padding: 1.4rem;
+    }
+
+}
